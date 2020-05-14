@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+  <script src="./node_modules/parallaxing/dist/parallaxing.min.js"></script>
+  <script src="typed.min.js"></script>
+
+</head>
+<body>
+  <div class="first-screen">
+    <div>
+      <span class="dynamic-text">Hello</span>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="pic"><img src="1.JPG" alt=""></div>
+    <div class="pic"><img src="2.JPG" alt=""></div>
+    <div class="pic"><img src="3.JPG" alt=""></div>
+    <div class="pic"><img src="4.JPG" alt=""></div>
+    <div class="pic"><img src="5.JPG" alt=""></div>
+    <div class="pic"><img src="6.JPG" alt=""></div>
+    <div class="pic"><img src="7.JPG" alt=""></div>
+    <div class="pic"><img src="8.JPG" alt=""></div>
+    <div class="pic"><img src="9.JPG" alt=""></div>
+    <div class="pic"><img src="10.JPG" alt=""></div>
+    <div class="pic"><img src="11.JPG" alt=""></div>
+    <div class="pic"><img src="12.JPG" alt=""></div>
+    <div class="pic"><img src="13.JPG" alt=""></div>
+    <div class="pic"><img src="14.JPG" alt=""></div>
+  </div>
+
+  <script src="zooming.min.js"></script>
+
+  <script>
+    const typed = new Typed('.dynamic-text', {
+      strings: [
+      "My Cosplay Portfolio",
+      "My Cosplay Portfolio 🎀"
+      ],
+      typeSpeed: 80,
+      loop: true,
+      loopCount: Infinity
+    })
+
+    new Zooming().listen('img')
+
+  </script>
+</body>
+</html>
